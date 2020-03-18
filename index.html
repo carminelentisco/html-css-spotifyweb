@@ -4,18 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
     <div id="app">
+        
         <!-- Main content -->
         <main id="main-window">
+            
             <!-- Sidebar -->
             <aside id="sidebar">
-                <div class="sidebar-top">Logo e Nav</div>
+                
+                <div class="sidebar-top">
+                    
+                    <!-- Logo -->
+                    <div class="logo">
+                        <img src="img/logo.svg" alt="Spotyfy">
+                    </div>
 
-                <div class="sidebar-bottom">Account</div>
+                    <!-- Action -->
+                    <div class="sidebar-top-action">
+
+                        <!-- Home -->
+                        <div class="home">
+                            <img src="img/home.svg" alt="Home">
+                            <span class="white-hov">Home</span>
+                        </div>
+
+                        <!-- Cerca -->
+                        <div class="search">
+                            <img src="img/search.svg" alt="Home">
+                            <span class="white-hov">Cerca</span>
+                        </div>
+
+                        <!-- La tua libreria -->
+                        <div class="library">
+                            <img src="img/libreria.svg" alt="Home">
+                            <span class="white-hov">La tua libreria</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Playlist -->
+                    <div class="playlist">
+                        <div class="container-playlist">
+                            <h2>PLAYLIST</h2>
+
+                            <div class="add-playlist">
+                                <i class="fas fa-plus"></i>
+                                <span class="white-hov">Crea Playlist </span>
+                            </div>
+                        </div>
+
+                        <div class="name-playlist white-hov">Nome Playlist</div>
+                        <div class="name-playlist white-hov">Nome Playlist</div>
+                        <div class="name-playlist white-hov">Nome Playlist</div>
+                        <div class="name-playlist white-hov">Nome Playlist</div>
+                        <div class="name-playlist white-hov">Nome Playlist</div>
+                        <div class="name-playlist white-hov">Nome Playlist</div>
+                        <div class="name-playlist white-hov">Nome Playlist</div>
+
+                    </div>
+
+                </div>
+
+                <div class="sidebar-bottom">
+
+                    <div class="container-sidebar-bottom">
+                        
+                        <!-- INSTALL -->
+                        <div class="install-app white-hov">
+                            <i class="far fa-arrow-alt-circle-down"></i>
+                            <span>Install app</span>
+                        </div>
+                        
+                       <div class="line">&nbsp;</div>
+
+                        <div class="account spotty-green">
+                            <img src="img/profile.svg" alt="Foto profilo">
+                            <span>Jhon Doe</span>
+                        </div>
+                     
+
+                    </div>
+
+                </div>
+            
             </aside>
 
             <!-- Content -->
@@ -47,6 +124,7 @@
                     </section>
                 </div>
             </div>
+        
         </main>
 
         <!-- Bottom Player -->
