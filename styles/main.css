@@ -184,6 +184,11 @@ body {
     padding: 90px 15px 30px;
 }
 
+.container-scrollable {
+    width: 1600px;
+    margin: 0 auto;
+}
+
 .content-top-bar {
     position: absolute;
     top: 0;
@@ -245,42 +250,62 @@ body {
     background: rgba(171, 254, 46, 1);
 }
 
-/*-----------------debug-----------*/
 /* CONTENT CATEGORY */
 
 .recently-played {
     margin-top: 40px;
-   display: flex;
-   justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
 }
 
 .album {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(100% / 6);
+    width: 250px;
+}
+
+.album-image {
     position: relative;
 }
 
-.layover {
+.album-description {
+    width: 100%;
+    text-align: center;
+}
+
+.layover{
+    height: 250px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0);
     position: absolute;
-    background-color: #000;
-    z-index: 11;
+    top: 0;
+    left: 0;
+    transition: background .4s;
 }
 
-.album img {
-    position: relative;
-    width: 90%;
+.album-image i {
+    font-size: 50px;
+    position: absolute;
+    color: #808080;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.album-image img {
+    width: 250px;
+    height: 250px;
     max-width: 100%;
 }
-
-
 
 .album h4 {
     font-size: 14px;
     font-weight: 700;
     margin-top: 20px;
-    text-align: center;
+
 
 }
 
@@ -291,9 +316,65 @@ body {
     margin-top: 10px;
 }
 
-
 .btn-upgrade:hover {
     background-color: rgb(0, 0, 0);
+}
+
+.album-image:hover .layover{
+    background-color: rgba(0, 0, 0, .70);
+}
+
+.album-image:hover i {
+    opacity: 1;
+}
+
+/* CREATO PER... */
+
+.create-for-section {
+    margin-top: 50px;
+}
+
+.create-for-user {
+    margin-top: 40px;
+    display: flex;
+}
+
+.create-for-section p {
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #808080;
+}
+
+.suggerimenti {
+    margin-right: 20px;
+}
+
+.suggerimenti .album-description h4 {
+    margin-top: 20px;
+}
+
+/* POPULAR ARTIST */
+
+.popular-artist-section {
+    margin-top: 50px;
+}
+
+.popular-artist-user {
+    margin-top: 40px;
+    display: flex;
+}
+
+.popular-artist-section p {
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #808080;
+}
+
+.suggerimenti .album-image img,
+.suggerimenti .album-image .layover {
+    border-radius: 100%;
 }
 
 
