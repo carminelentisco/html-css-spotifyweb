@@ -22,7 +22,15 @@ body {
     color: #abfe2e;
 }
 
+.font-title-player {
+    font-size: 16px;
+    font-weight: 700;
+}
 
+.font-description-player {
+    font-size: 13px;
+    font-weight: 500;
+}
 
 /* LAYOUT */
 
@@ -378,10 +386,87 @@ body {
 }
 
 
-
 /* BOTTOM PLAYER */
 
 #player {
-    height: 80px; /*debug*/
     background: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.player-album {
+    display: flex;
+    align-items: center;
+}
+
+.player-album-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-button {
+    display: flex;
+    align-items: center;
+}
+
+.player-settings {
+    display: flex;
+    align-items: center;
+}
+
+.player-settings-volume {
+    width: 80px;
+    border: 2px solid #808080;
+    border-radius: 6px;
+}
+
+.player-abum-info-icon {
+    margin-left: 20px;
+}
+
+.player-album img {
+    height: 50px;
+    width: 50px;
+}
+
+.player-abum-info-icon i,
+.player-settings i {
+    padding: 0 5px;
+}
+
+.player-button i {
+    padding: 10px 20px;
+}
+
+.player-button span i {
+    font-size: 30px;
+} 
+
+/* debug */
+
+.player-timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-timeline-line {
+    width: 700px;
+    border: 2px solid #808080;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.player-timeline span {
+    font-size: 10px;
+    margin: 0 20px;
 }
