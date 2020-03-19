@@ -60,6 +60,10 @@ body {
     flex-grow: 1;
 }
 
+.logo-xs {
+    display: none;
+}
+
 .sidebar-bottom {
     background: #000;
 }
@@ -187,13 +191,15 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    max-width: 100%;
     overflow-y: auto;
     /* 90px = height di content-top-bar */
     padding: 90px 15px 30px;
 }
 
 .container-scrollable {
-    width: 1600px;
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -528,4 +534,110 @@ body {
 .player-abum-info-icon i,
 .player-settings i {
     padding: 0 5px;
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 600px ) {
+    
+    /* SIDE BAR RESPOSNIVE */
+
+    #sidebar {
+        flex-basis: 20px; 
+        padding: 10px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-xs {
+        display: block;
+    }
+
+    .playlist {
+        display: none;
+    }
+    
+    .logo-xs img {
+        height: 40px;
+    }
+
+    .sidebar-top-action span {
+        display: none;
+    }
+    .sidebar-top-action .home img,
+    .sidebar-top-action .search img,
+    .sidebar-top-action .library img {
+        height: 30px;
+        padding-left: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+   
+    .container-sidebar-bottom {
+        margin: 0;
+        padding-left: 5px;
+    }
+
+    .line,
+    .sidebar-bottom .install-app span,
+    .account span {
+        display: none;
+    }
+
+    /* SCROLLABLE */
+    .recently-played {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+    }
+
+    .layover {
+        display: none;
+    }
+
+    .album {
+        width: 200px;
+        padding: 20px 0px;
+        margin: 0 20px;
+    }
+
+    .album-image img {
+        width: 200px;
+        height: 200px;
+        max-width: 100%;
+    }   
+
+    .scrollable nav {
+        flex-wrap: wrap;
+    }
+
+    .content-menu span {
+        padding: 20px 15px 5px;
+        font-size: 13px;
+    }
+
+    /* PLAYER */
+    
+    .player-album {
+        width: 190px;
+    }
+
+    .player-album-info {
+        margin-left: 10px;
+    }
+
+    .player-abum-info-icon {
+        margin: 0;
+    }
+    
+    .player,
+    .player-settings {
+        display: none;
+    }
+
+
 }
