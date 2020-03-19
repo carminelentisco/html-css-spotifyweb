@@ -722,10 +722,10 @@ body {
     }
 
     .player-timeline-line {
-        width: 110px; 
+        width: 500px;
     }
 
     .player-timeline-line-hov {
-        width: 70px;
+        width: 100px;
     }
 }
