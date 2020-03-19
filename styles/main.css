@@ -396,6 +396,8 @@ body {
     padding: 20px;
 }
 
+/* Player album */
+
 .player-album {
     display: flex;
     align-items: center;
@@ -406,6 +408,21 @@ body {
     flex-direction: column;
     margin-left: 20px;
 }
+
+.player-abum-info-icon {
+    margin-left: 20px;
+}
+
+.player-album img {
+    height: 50px;
+    width: 50px;
+}
+
+.player-abum-info-icon i:hover {
+    color: #abfe2e;
+}
+
+/* Player */
 
 .player {
     display: flex;
@@ -418,41 +435,6 @@ body {
     align-items: center;
 }
 
-.player-settings {
-    display: flex;
-    align-items: center;
-}
-
-.player-settings-volume {
-    width: 80px;
-    border: 2px solid #808080;
-    border-radius: 6px;
-}
-
-.player-abum-info-icon {
-    margin-left: 20px;
-}
-
-.player-album img {
-    height: 50px;
-    width: 50px;
-}
-
-.player-abum-info-icon i,
-.player-settings i {
-    padding: 0 5px;
-}
-
-.player-button i {
-    padding: 10px 20px;
-}
-
-.player-button span i {
-    font-size: 30px;
-} 
-
-/* debug */
-
 .player-timeline {
     display: flex;
     justify-content: space-between;
@@ -460,13 +442,90 @@ body {
 }
 
 .player-timeline-line {
+    position: relative;
     width: 700px;
-    border: 2px solid #808080;
+    border: 2px solid #535353;
     border-radius: 4px;
     margin: 10px 0;
+}
+
+.timeline {
+    position: relative;
+}
+
+.player-button i {
+    padding: 10px 20px;
 }
 
 .player-timeline span {
     font-size: 10px;
     margin: 0 20px;
+}
+
+
+.player-button span i {
+    font-size: 30px;
+} 
+
+.player-timeline-line-hov {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 200px;
+    border: 2px solid rgba(165, 165, 165, .0);
+    border-radius: 4px;
+    transition: border .4s;
+}
+   
+.timeline:hover .player-timeline-line-hov {
+    border: 2px solid rgba(165, 165, 165, 1);
+
+}
+
+.player-button i:hover {
+    color: #abfe2e;
+}
+
+/* Player settings */
+
+
+.player-settings {
+    display: flex;
+    align-items: center;
+}
+
+.player-settings-volume {
+    width: 80px;
+    border: 2px solid #535353;
+    border-radius: 6px;
+}
+
+.sound-line {
+    position: relative;
+}
+
+.sound-line-hov {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 20px;
+    border: 2px solid rgba(165, 165, 165, .0);
+    border-radius: 4px;
+    transition: border .4s;
+}
+
+.sound-line:hover .sound-line-hov {
+    border: 2px solid rgba(165, 165, 165, 1);
+
+}
+
+.player-settings i:hover {
+    color: #abfe2e;
+}
+
+/* Bottome player double rule */
+
+.player-abum-info-icon i,
+.player-settings i {
+    padding: 0 5px;
 }
