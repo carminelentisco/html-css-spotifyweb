@@ -226,6 +226,10 @@ body {
 
 /* ---- Recent played / Create for --- */
 
+.played-album i {
+    display: none;
+}
+
 .recently-played-content,
 .create-for-content,
 .popular-artist-content {
@@ -236,7 +240,7 @@ body {
 .recently-played-album,
 .suggerimento,
 .artista {
-    width: 240px;
+    flex-basis: 200px;
     margin: 0 10px 10px 0;
     text-align: center;   
 
@@ -544,8 +548,8 @@ body {
     }
 
     .layover{
-        width: 240px;
-        height: 240px;
+        width: 200px;
+        height: 200px;
         background-color: rgba(0, 0, 0, 0);
         position: absolute;
         top: 0;
@@ -592,6 +596,14 @@ body {
 
 
     /* ------------ PLAYER ALBUM ----------- */
+
+    .player-album-icon {
+        flex-direction: row;
+    }
+    
+    .player-album-icon i {
+        padding: 0 5px;
+    }
 
     .player-album-icon i:hover,
     .player-button ul.list__stile li i:hover,
